@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta property="og:image" content="" />
+        <link rel="icon" href="ipl.png" type="image/png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link preload="" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+        <link preload="" href="fonts.css" rel="stylesheet" />
+        <link preload="" rel="stylesheet" href="uikit.min.css" />
+        <link preload="" rel="stylesheet" href="style.css?a=77" />
+        <script src="https://kit.fontawesome.com/d65ca964bf.js" crossorigin="anonymous"></script>
+        <link preload="" rel="stylesheet" href="psl_style.css?a=76" />
+        
+
+
+        <style>
+            .rmp-logo.rmp-logo {
+                left: 10px !important;
+                bottom: 44px !important;
+                width: 16%;
+                max-width: 170px;
+                min-width: 70px;
+            }
+        </style>
+
+        <style type="text/css">
+            body {
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            code {
+                font-family: source-code-pro, Menlo, Monaco, Consolas, courier new, monospace;
+            }
+            .styles_shimmer__2mxs4 {
+                border-radius: 10px;
+                background: #0d0d19;
+                background-image: linear-gradient(to right, #0d0d19 8%, #000000 18%, #0d0d19 33%);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: 1000 100;
+                animation-duration: 1.6s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-name: styles_shimmering__2osrK;
+                animation-timing-function: ease-in-out;
+                display: inline-block;
+            }
+
+            .styles_shimmerdiv__1prqm {
+                display: inline-block;
+            }
+
+            @keyframes styles_shimmering__2osrK {
+                0% {
+                    background-position: top right;
+                }
+
+                100% {
+                    background-position: top left;
+                }
+            }
+        </style>
+        <link id="rmp-dress-code" type="text/css" rel="stylesheet" href="https://cdn.radiantmediatechs.com/rmp/5.7.1/css/rmp-s3.min.css" />
+        <style type="text/css">
+            .rmp-color-button,
+            .rmp-time-elapsed-text,
+            .rmp-dvr-rec .rmp-i-live,
+            .rmp-volume.rmp-volume-off-mute .rmp-hint,
+            .rmp-hint,
+            .rmp-in-module-hint,
+            .rmp-dvr-rec .rmp-i-live .rmp-time-elapsed-text,
+            .rmp-live-dvr.rmp-dvr-rec .rmp-i-live:hover .rmp-time-elapsed-text,
+            .rmp-control-bar-hint,
+            .rmp-ad-outstream .rmp-volume.rmp-volume-off-mute,
+            .rmp-desktop-volume-indicator,
+            .rmp-desktop-volume-hint {
+                color: #ffffff;
+            }
+            .rmp-color-bg-button,
+            .rmp-circle::before,
+            .rmp-overlay-level-active,
+            .rmp-module-volume-bar,
+            .rmp-desktop-volume-bar {
+                background: #ffffff;
+            }
+            .rmp-overlay-title-text {
+                border-bottom-color: #ffffff;
+            }
+            .rmp-time-total,
+            .rmp-overlay-level,
+            .rmp-overlay-level-active.rmp-abr-active,
+            .rmp-module-volume-bar-container,
+            .rmp-desktop-volume-bar-container {
+                border-color: #ffffff;
+            }
+        </style>
+        <style type="text/css">
+            .rmp-i:hover,
+            .rmp-module:hover .rmp-i,
+            .rmp-i-live,
+            .rmp-dvr-rec .rmp-i-live:hover,
+            .rmp-i-live,
+            .rmp-pip-on .rmp-i-pip,
+            .rmp-quick-unmute:hover .rmp-i-volume,
+            .rmp-quick-unmute:hover .rmp-quick-unmute-text,
+            .rmp-overlay-level:hover:not(.rmp-overlay-level-active),
+            .rmp-volume.rmp-volume-off-mute,
+            .rmp-module-volume-bar-area .rmp-volume-off-mute {
+                color: #ffa52d;
+            }
+            .rmp-overlay-level-active {
+                color: #ffa52d;
+            }
+            .rmp-loaded {
+                background-color: #ffa52d;
+            }
+            .rmp-abr-active {
+                border-color: #ffa52d;
+            }
+            .rmp-ad-current-time,
+            .rmp-ad-markers {
+                background: #ffa52d;
+            }
+        </style>
+       
+       
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-69684695-1");
+        </script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    </head>
+    <style>
+     
+
+        /* Mixins */
+        /* bg shortcodes */
+        .bg-gradient1 span,
+        .bg-gradient1:before {
+            background: #ffffff;
+            /*background: -webkit-gradient(linear, left top, left bottom, from(#fa7e29), color-stop(80%, #f6682f), to(#f6682f));*/
+            /*background: linear-gradient(180deg, #fa7e29 0%, #f6682f 80%, #f6682f 100%);*/
+        }
+
+        /* General */
+
+        /* fancy Button */
+        .fancy-button {
+            display: inline-block;
+            font-family: "Heebo", Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.07em;
+            line-height: 11px;
+            color: #ffffff;
+            position: relative;
+            margin: 8px;
+            float: left;
+        }
+        .fancy-button.bg-gradient1 {
+            text-shadow: 0px 0px 1px #bf4c28;
+        }
+        .fancy-button.bg-gradient2 {
+            text-shadow: 0px 0px 1px #227270;
+        }
+        .fancy-button.bg-gradient3 {
+            text-shadow: 0 0 1px #546082;
+        }
+        .fancy-button:before {
+            content: "";
+            display: inline-block;
+            height: 40px;
+            position: absolute;
+            bottom: -1px;
+            left: 10px;
+            right: 10px;
+            z-index: -1;
+            border-radius: 2em;
+            -webkit-filter: blur(14px) brightness(0.9);
+            filter: blur(14px) brightness(0.9);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .fancy-button i {
+            margin-top: -2px;
+            font-size: 1.265em;
+            vertical-align: middle;
+        }
+        .fancy-button span {
+            display: inline-block;
+            padding: 14px 17px;
+            border-radius: 50em;
+            position: relative;
+            z-index: 2;
+            will-change: transform, filter;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .fancy-button:focus {
+            color: #ffffff;
+        }
+        .fancy-button:hover {
+            color: #ffffff;
+        }
+        .fancy-button:hover span {
+            -webkit-filter: brightness(0.9) contrast(1.2);
+            filter: brightness(0.9) contrast(1.2);
+            -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+        }
+        .fancy-button:hover:before {
+            bottom: 3px;
+            -webkit-filter: blur(6px) brightness(0.8);
+            filter: blur(6px) brightness(0.8);
+        }
+        .fancy-button:active span {
+            -webkit-filter: brightness(0.75) contrast(1.7);
+            filter: brightness(0.75) contrast(1.7);
+        }
+    </style>
+    <body>
+        <div id="root">
+            <div>
+                <div>
+                    <header class="main_header">
+                        <div class="uk-container uk-container-expand">
+                            <a href="https://avinandan.com/ipl" class="fancy-button bg-gradient1">
+                                <span>
+<img src="ipll.png" width="25px" height="25px" alt=" IPL" />&nbsp;&nbsp;
+
+                            </a>
+                            <
+                            <!--<img src="ipl.png" width="50px" height="50px" alt=" IPL" />-->
+                        </div>
+                    </header>
+                    <div uk-height-match="target: > .h_match">
+                    <div class="content_sec live_sec h_match">
+                        <section class="player_sec">
+                    
+                            
+                            
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://iplhd.us/embed/"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    allowfullscreen="true"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+
+                                
+
+                                <div class="player_btm_bar">
+                                   
+                                </div>
+                            </section>
+                            <div class="sidebar mobile_info_sec">
+                               <ul class="sidebar_tab_btns sidebar_tab_btns_half" uk-switcher="connect: .m_sbar">
+                                    <li class="uk-active"><a href="#">Info</a></li>
+                                   
+                                </ul>
+                               <ul class="m_sbar sidebar_tab uk-switcher" style="touch-action: pan-y pinch-zoom;">
+                                    <li class="uk-active">
+                                
+                                        <iframe src="https://widget.crictimes.org/" style="width: 100%; min-height: 450px;" frameborder="0" scrolling="yes"></iframe>
+                                            <a href="#">
+                                                <h4 class="h1fordramadetail"><b>Watch Cricket Live</b></h4>
+                                            </a>
+                                            <div class="abt_content">
+                                                <div>
+                                                    <span width="0">
+                                                        <span><span>Made by Harsimran Singh | HScompany </span> </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="info_txt vod_txt">
+                                                Share with Your Friends
+                                            </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div>
+                                            
+                                                            
+                                                           
+<h4 class="homesectionone">
+    
+
+                                                            <p></p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr />
+                        </div>
+
+                        <!--Desktop-->
+                        <div class="sidebar h_match" style="min-height: 1768.66px;">
+                            <ul class="sidebar_tab_btns sidebar_tab_btns_half" uk-switcher="connect: .sbar">
+                                
+                                
+                            </ul>
+                            <ul class="sbar sidebar_tab uk-switcher" style="touch-action: pan-y pinch-zoom;">
+                                <li class="uk-active">
+                                    
+                                   
+                                    <div class="info_tab_box">
+                                        <iframe src="https://widget.crictimes.org/" style="width: 100%; min-height: 450px;" frameborder="0" scrolling="yes"></iframe>
+                                        
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <ul class="upnext_ul continue_watching_d">
+                                            <li class="">
+                                                <div class="prog_sldr_box">
+                                                    <div class="prog_sldr_img">
+                                                        
+                                                    </div>
+                                                    <div class="prog_sldr_text">
+                                                        
+<h4 class="homesectionone">
+    <b>
+        <a class="anchor" href="s1.php" title="Server 1"> <i class="fas fa-eye"></i> Live on Server 1</a>
+    </b>
+</h4>
+
+
+
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr />
+                    </div>
+                    <footer class="pad_right pad_left pad_tb">
+                        <div class="uk-height-match uk-grid uk-grid-stack" uk-grid="">
+                            <div class="uk-width-1-1 uk-first-column">
+                                
+                                <p>All Rights Reserved - 2020 | Produced by <a href="https://avinandan.com/" target="_blank">HARSIMRAN SINGH</a></p>
+
+                            </div>
+                            <div class="uk-width-1-1 hide_dsk_ftr uk-grid-margin uk-first-column">
+                                <div class="ftr_btns">
+                                    <!--Link-->
+                                    <script>
+                                        var _uox = _uox || {};
+                                        (function () {
+                                            var s = document.createElement("script");
+                                            s.src = "https://static.usuarios-online.com/uo2.min.js";
+                                            document.getElementsByTagName("head")[0].appendChild(s);
+                                        })();
+                                    </script>
+                                    <a href="https://www.usuarios-online.com/en/" data-id="ea3892cdc422546bdeec60f7a9bdf8c4" data-type="default" target="_blank" id="uox_link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69684695-1"></script>
+                    <script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag() {
+                            dataLayer.push(arguments);
+                        }
+                        gtag("js", new Date());
+
+                        gtag("config", "UA-69684695-1");
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="ays_tooltip">Haha, you can't copy it</div>
+<style>
+    #ays_tooltip,
+    .ays_tooltip_class {
+        display: none;
+        position: absolute;
+        z-index: 999999999;
+        background-color: #ffffff;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        border: 1px solid #b7b7b7;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 15px 1px;
+        color: #ff0000;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #ays_tooltip > *,
+    .ays_tooltip_class > * {
+        color: #ff0000;
+        font-size: 12px;
+    }
+</style>
+<style>
+    *:not(input):not(textarea)::selection {
+        background-color: transparent !important;
+        color: inherit !important;
+    }
+
+    *:not(input):not(textarea)::-moz-selection {
+        background-color: transparent !important;
+        color: inherit !important;
+    }
+</style>
+<script>
+    // window.addEventListener("DOMContentLoaded",function(){
+    function stopPrntScr() {
+        var inpFld = document.createElement("input");
+        inpFld.setAttribute("value", "Access Denied");
+        inpFld.setAttribute("width", "0");
+        inpFld.style.height = "0px";
+        inpFld.style.width = "0px";
+        inpFld.style.border = "0px";
+        document.body.appendChild(inpFld);
+        inpFld.select();
+        document.execCommand("copy");
+        inpFld.remove(inpFld);
+    }
+
+    (function ($) {
+        "use strict";
+        $(function () {
+            let all = $("*").not("script, meta, link, style, noscript, title"),
+                tooltip = $("#ays_tooltip"),
+                tooltipClass = "mouse";
+            if (tooltipClass == "mouse" || tooltipClass == "mouse_first_pos") {
+                all.on("mousemove", function (e) {
+                    let cordinate_x = e.pageX;
+                    let cordinate_y = e.pageY;
+                    let windowWidth = $(window).width();
+                    if (cordinate_y < tooltip.outerHeight()) {
+                        tooltip.css({ top: cordinate_y + 10 + "px" });
+                    } else {
+                        tooltip.css({ top: cordinate_y - tooltip.outerHeight() + "px" });
+                    }
+                    if (cordinate_x > windowWidth - tooltip.outerWidth()) {
+                        tooltip.css({ left: cordinate_x - tooltip.outerWidth() + "px" });
+                    } else {
+                        tooltip.css({ left: cordinate_x + 5 + "px" });
+                    }
+                });
+            } else {
+                tooltip.addClass(tooltipClass);
+            }
+            $(window).on("keyup", function (e) {
+                let keyCode = e.keyCode ? e.keyCode : e.which;
+                if (keyCode == 44) {
+                    stopPrntScr();
+                    show_tooltip(1);
+                    audio_play();
+                }
+            });
+
+            $(document).on("contextmenu", function (e) {
+                let t = e || window.event;
+                let n = t.target || t.srcElement;
+                if (n.nodeName !== "A") {
+                    show_tooltip(1);
+                    audio_play(1);
+                }
+                return false;
+            });
+
+            $(document).on("contextmenu", function (e) {
+                let target = $(event.target);
+                if (target.is("img") || target.is("div.ays_tooltip_class")) {
+                    let t = e || window.event;
+                    let n = t.target || t.srcElement;
+                    if (n.nodeName !== "A") {
+                        show_tooltip(1);
+                        audio_play(1);
+                    }
+                    return false;
+                }
+            });
+
+            $(document).on("dragstart", function () {
+                show_tooltip(1);
+                audio_play(1);
+                return false;
+            });
+
+            $(window).on("keydown", function (event) {
+                var isOpera = BrowserDetect.browser === "Opera";
+
+                var isFirefox = BrowserDetect.browser === "Firefox";
+
+                var isSafari = BrowserDetect.browser === "Safari";
+
+                var isIE = BrowserDetect.browser === "Explorer";
+                var isChrome = BrowserDetect.browser === "Chrome";
+                var isMozilla = BrowserDetect.browser === "Mozilla";
+
+                if (BrowserDetect.OS === "Windows") {
+                    if (isChrome) {
+                        if (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 68 || event.keyCode === 67)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isFirefox) {
+                        if (
+                            (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 75 || event.keyCode === 69)) ||
+                            event.keyCode === 118 ||
+                            (event.keyCode === 112 && event.shiftKey) ||
+                            (event.keyCode === 115 && event.shiftKey) ||
+                            (event.keyCode === 118 && event.shiftKey) ||
+                            (event.keyCode === 120 && event.shiftKey)
+                        ) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isOpera) {
+                        if (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 88 || event.keyCode === 69)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isIE) {
+                        if (event.keyCode === 123 && event.shiftKey) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isMozilla) {
+                        if ((event.ctrlKey && event.keyCode === 73) || (event.altKey && event.keyCode === 68)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+
+                    if (event.keyCode === 83 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 65 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 67 && event.ctrlKey && !event.shiftKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 86 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 88 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 85 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 123 || (event.keyCode === 123 && event.shiftKey)) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+                } else if (BrowserDetect.OS === "Linux") {
+                    if (isChrome) {
+                        if ((event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67)) || (event.ctrlKey && event.keyCode === 85)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isFirefox) {
+                        if (
+                            (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 75 || event.keyCode === 69)) ||
+                            event.keyCode === 118 ||
+                            event.keyCode === 116 ||
+                            (event.keyCode === 112 && event.shiftKey) ||
+                            (event.keyCode === 115 && event.shiftKey) ||
+                            (event.keyCode === 118 && event.shiftKey) ||
+                            (event.keyCode === 120 && event.shiftKey) ||
+                            (event.keyCode === 85 && event.ctrlKey)
+                        ) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+                    if (isOpera) {
+                        if ((event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 88 || event.keyCode === 69)) || (event.ctrlKey && event.keyCode === 85)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+
+                    if (event.keyCode === 83 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 65 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 67 && event.ctrlKey && !event.shiftKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 86 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 88 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 85 && event.ctrlKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 123 || (event.keyCode === 123 && event.shiftKey)) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+                } else if (BrowserDetect.OS === "Mac") {
+                    if (isChrome || isSafari || isOpera || isFirefox) {
+                        if (event.metaKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 69 || event.keyCode === 75)) {
+                            show_tooltip(1);
+                            audio_play(1);
+                            return false;
+                        }
+                    }
+
+                    if (event.keyCode === 83 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 65 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 67 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 86 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 88 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 85 && event.metaKey) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+
+                    if (event.keyCode === 123) {
+                        show_tooltip(1);
+                        audio_play(1);
+                        return false;
+                    }
+                }
+            });
+
+            function disableSelection(e) {
+                if (typeof e.onselectstart !== "undefined")
+                    e.onselectstart = function () {
+                        show_tooltip();
+                        audio_play();
+                        return false;
+                    };
+                else if (typeof e.style.MozUserSelect !== "undefined") e.style.MozUserSelect = "none";
+                else
+                    e.onmousedown = function () {
+                        show_tooltip();
+                        audio_play();
+                        return false;
+                    };
+                e.style.cursor = "default";
+            }
+
+            var msg_count = 1;
+            function show_tooltip(mess) {
+                if (mess && msg_count == 1) {
+                    if (tooltipClass == "mouse_first_pos") {
+                        if ($("#ays_tooltip2").length > 0) {
+                            $("#ays_tooltip2").remove();
+                        }
+                        var tooltip2 = tooltip.clone().prop("id", "ays_tooltip2").insertBefore(tooltip);
+                        $("#ays_tooltip2").addClass("ays_tooltip_class");
+                        tooltip2.css({ display: "table" });
+                        $("#ays_tooltip").fadeOut();
+                        setTimeout(function () {
+                            tooltip2.remove();
+                        }, 1000);
+                    } else {
+                        tooltip.css({ display: "table" });
+                        setTimeout(function () {
+                            $("#ays_tooltip").fadeOut(500);
+                        }, 1000);
+                    }
+                }
+            }
+
+            function audio_play(audio) {
+                if (audio) {
+                    var audio = document.getElementById("sccp_public_audio");
+                    if (audio) {
+                        audio.currentTime = 0;
+                        audio.play();
+                    }
+                }
+            }
+        });
+    })(jQuery);
+
+    var BrowserDetect = {
+        init: function () {
+            this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+            this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version";
+            this.OS = this.searchString(this.dataOS) || "an unknown OS";
+        },
+        searchString: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                var dataString = data[i].string;
+                var dataProp = data[i].prop;
+                this.versionSearchString = data[i].versionSearch || data[i].identity;
+                if (dataString) {
+                    if (dataString.indexOf(data[i].subString) !== -1) return data[i].identity;
+                } else if (dataProp) return data[i].identity;
+            }
+        },
+        searchVersion: function (dataString) {
+            var index = dataString.indexOf(this.versionSearchString);
+            if (index === -1) return;
+            return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
+        },
+        dataBrowser: [
+            {
+                string: navigator.userAgent,
+                subString: "Chrome",
+                identity: "Chrome",
+            },
+            {
+                string: navigator.userAgent,
+                subString: "OmniWeb",
+                versionSearch: "OmniWeb/",
+                identity: "OmniWeb",
+            },
+            {
+                string: navigator.vendor,
+                subString: "Apple",
+                identity: "Safari",
+                versionSearch: "Version",
+            },
+            {
+                prop: window.opera,
+                identity: "Opera",
+                versionSearch: "Version",
+            },
+            {
+                string: navigator.vendor,
+                subString: "iCab",
+                identity: "iCab",
+            },
+            {
+                string: navigator.vendor,
+                subString: "KDE",
+                identity: "Konqueror",
+            },
+            {
+                string: navigator.userAgent,
+                subString: "Firefox",
+                identity: "Firefox",
+            },
+            {
+                string: navigator.vendor,
+                subString: "Camino",
+                identity: "Camino",
+            },
+            {
+                // for newer Netscapes (6+)
+                string: navigator.userAgent,
+                subString: "Netscape",
+                identity: "Netscape",
+            },
+            {
+                string: navigator.userAgent,
+                subString: "MSIE",
+                identity: "Explorer",
+                versionSearch: "MSIE",
+            },
+            {
+                string: navigator.userAgent,
+                subString: "Gecko",
+                identity: "Mozilla",
+                versionSearch: "rv",
+            },
+            {
+                // for older Netscapes (4-)
+                string: navigator.userAgent,
+                subString: "Mozilla",
+                identity: "Netscape",
+                versionSearch: "Mozilla",
+            },
+        ],
+        dataOS: [
+            {
+                string: navigator.platform,
+                subString: "Win",
+                identity: "Windows",
+            },
+            {
+                string: navigator.platform,
+                subString: "Mac",
+                identity: "Mac",
+            },
+            {
+                string: navigator.userAgent,
+                subString: "iPhone",
+                identity: "iPhone/iPod",
+            },
+            {
+                string: navigator.platform,
+                subString: "Linux",
+                identity: "Linux",
+            },
+        ],
+    };
+    BrowserDetect.init();
+    // }, false);
+</script>
+    </body>
+    <script id="cid0020000262107380542" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 244px; height: 311px;">
+        {"handle":"iplt20avinandan","arch":"js","styles":{"a":"F46B14","b":100,"c":"000000","d":"000000","k":"F46B14","l":"F46B14","m":"F46B14","p":"10","q":"F46B14","r":100,"usricon":1.12,"pos":"br","cv":1,"cvfnt":"Consolas, monaco, monospace, sans-serif","cvbg":"ff6600","cvfg":"ffffff","cvw":169,"cvh":32,"surl":0,"allowpm":0,"cnrs":"0.1","ticker":1,"fwtickm":1}}
+    </script>
+</html>
